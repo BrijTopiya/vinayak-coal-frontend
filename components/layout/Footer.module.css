@@ -1,0 +1,264 @@
+.footer {
+  position: relative;
+  /*background-color: #0d0d0d;*/
+  background-image: url('https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  /*border-top: 4px solid #CE6720;*/
+}
+
+.footerOverlay {
+  background: rgba(0, 0, 0, 0.60);
+  padding: 60px 6% 0;
+}
+
+.footerMain {
+  display: grid;
+  grid-template-columns: 1.1fr 0.8fr 1.3fr;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.footerCol h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footerCol h4 {
+  color: #CE6720;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.footerLogo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #CE6720;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.footerLogo span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.footerCol p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerCol ul a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footerCol ul a:hover {
+  color: #ff6600;
+}
+
+.invisibleHeading {
+  visibility: hidden;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: none;
+}
+
+.contactItem i {
+  color: #CE6720;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.contactItem p {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 90px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #CE6720;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  z-index: 10;
+}
+
+.whatsappFloat {
+  position: fixed;
+  bottom: 25px;
+  right: 27px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerBottom p {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 12px;
+}
+
+.footerSocials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footerSocials a:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .footerMain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerMain {
+    grid-template-columns: 1fr;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .scrollTop {
+    bottom: 80px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsappFloat {
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  list-style: none;
+}
+
+.dropdownToggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #fff;
+  min-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+}
+
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdownItem {
+  display:flexbox;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdownItem i {
+  color: #cc7a3c;
+  font-size: 0.9rem;
+}
+
+.dropdownItem:hover {
+  background: #f3edf9;
+  color: #cc7a3c;
+}

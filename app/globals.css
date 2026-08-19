@@ -1,0 +1,209 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #CE6720;
+  --accent-bg: rgba(206, 103, 32, 0.1);
+  --accent-border: rgba(206, 103, 32, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font: 16px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* ===== Global Button System ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--sans);
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #CE6720;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #ff6600;
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background-color: #ffffff;
+  color: #CE6720;
+}
+
+.btn-white:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 10px 22px;
+  font-size: 0.85rem;
+}
+
+/* Shared page banner style (About, Business, Price, Media, Contact) */
+.page-banner-title {
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #CE6720;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.6);
+}
+
+.page-banner-title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(170, 59, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.85rem;
+  }
+
+  .page-banner-title {
+    font-size: 2rem;
+  }
+
+  .page-banner-title::before {
+    top: 4px;
+    left: 4px;
+  }
+}
+
+/* ===== Shared Page Banner (About, Business, Price, Media, Contact, Products) ===== */
+.about-banner {
+  position: relative;
+  text-align: center;
+  background-image: url('/photo/HeaderBG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 90px 8%;
+  overflow: hidden;
+}
+
+.about-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45); /* overlay for better text readability */
+  z-index: 0;
+}
+
+.about-banner h1 {
+  position: relative;
+  z-index: 1;
+  color: #d97b3f;
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  line-height: 1.25;
+}
+
+.about-banner p {
+  color: #ccc;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .about-banner {
+    padding: 75px 6%;
+  }
+  .about-banner h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    padding: 60px 5%;
+    background-attachment: scroll; /* Fixed attachment has mobile viewport performance and scaling bugs */
+  }
+  .about-banner h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    padding: 50px 15px;
+  }
+  .about-banner h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,98 @@
+
+
+.about-banner{
+  position: relative;
+  text-align: center;
+  background-image: url('/HeaderBG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 90px 8%;
+  overflow: hidden;
+}
+
+.about-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background: linear-gradient(135deg, rgba(170, 59, 255, 0.88) 0%, rgba(106, 31, 184, 0.88) 100%);*/
+  z-index: 0;
+}
+
+
+.business-banner p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.business-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 8% 40px;
+}
+
+.business-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.business-intro p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px 8% 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.business-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-6px);
+}
+
+.business-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background-color: #CE6720;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-icon i {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.business-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.business-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}

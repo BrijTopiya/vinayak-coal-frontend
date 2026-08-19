@@ -1,0 +1,61 @@
+
+/* .about-banner styles moved to globals.css */
+
+.price-table-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.price-table-section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.price-note {
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+.price-table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.price-table thead {
+  background-color: #111;
+}
+
+.price-table thead th {
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+}
+
+.price-table tbody td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.price-value {
+  font-weight: 700;
+  color: #CE6720;
+}
+
+.price-table tbody tr:hover {
+  background-color: var(--code-bg);
+}

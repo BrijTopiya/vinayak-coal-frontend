@@ -1,0 +1,26 @@
+/* Banner styles are handled globally in globals.css */
+
+.privacy-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 8%;
+}
+
+.last-updated {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.privacy-content h2 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--text-h, #08060d);
+}
+
+.privacy-content p {
+  color: var(--text, #6b6375);
+  line-height: 1.8;
+  font-size: 1rem;
+}
