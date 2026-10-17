@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import styles from "./Header.module.css";
 
@@ -20,8 +20,8 @@ const Header = () => {
           <span className={styles.tagline}>Wakanda</span>
         </div>
         <div className={styles.contactInfo}>
-          <span><i className="fa-solid fa-envelope"></i> info@carbon.com</span>
-          <span><i className="fa-solid fa-phone"></i> 98273 *****</span>
+          <span><i className="fa-solid fa-envelope"></i> VINAYAKCOALCORPORATIONLLP@GMAIL.COM</span>
+          <span><i className="fa-solid fa-phone"></i>  7859983005</span>
         </div>
       </div>
 

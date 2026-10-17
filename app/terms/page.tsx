@@ -70,7 +70,7 @@ export default function TermsAndCondition() {
         <h2>9. Contact Us</h2>
         <p>
           If you have any questions regarding these Terms and Conditions,
-          please contact us at info@carbon.com or +91 98273 *****.
+          please contact us at VINAYAKCOALCORPORATIONLLP@GMAIL.COM or +91 7859983005.
         </p>
       </section>
     </div>

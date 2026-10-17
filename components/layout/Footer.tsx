@@ -66,11 +66,11 @@ const Footer = () => {
             </div>
             <div className={styles.contactItem}>
               <i className="fa-solid fa-envelope"></i>
-              <p>info@carbon.com</p>
+              <p>VINAYAKCOALCORPORATIONLLP@GMAIL.COM</p>
             </div>
             <div className={styles.contactItem}>
               <i className="fa-solid fa-phone"></i>
-              <p>+91 98273 *****</p>
+              <p>+91 7859983005</p>
             </div>
           </div>
 

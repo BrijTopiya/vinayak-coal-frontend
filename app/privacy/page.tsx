@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
         <h2>8. Contact Us</h2>
         <p>
           If you have any questions about this Privacy Policy, please
-          contact us at info@carbon.com or +91 98273 *****.
+          contact us at VINAYAKCOALCORPORATIONLLP@GMAIL.COM or +91 7859983005.
         </p>
       </section>
     </div>

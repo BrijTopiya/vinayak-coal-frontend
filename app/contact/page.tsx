@@ -57,11 +57,11 @@ export default function Contact() {
           </div>
           <div className="contact-item">
             <i className="fa-solid fa-envelope"></i>
-            <p>vinayakcoal@gmail.com</p>
+            <p>VINAYAKCOALCORPORATIONLLP@GMAIL.COM</p>
           </div>
           <div className="contact-item">
             <i className="fa-solid fa-phone"></i>
-            <p>+91 98273 38492</p>
+            <p>+91 7859983005</p>
           </div>
         </div>
 
